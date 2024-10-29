@@ -1,0 +1,49 @@
+# Theme
+foreground = c9c7cd
+background = 161617
+
+palette = 0=#27272a
+palette = 1=#ea83a5
+palette = 2=#90b99f
+palette = 3=#e6b99d
+palette = 4=#92a2d5
+palette = 5=#e29eca
+palette = 6=#85b5ba
+palette = 7=#313134
+palette = 8=#353539
+palette = 9=#ed96b3
+palette = 10=#a7c8b3
+palette = 11=#eac5ae
+palette = 12=#a7b3dd
+palette = 13=#e8b0d4
+palette = 14=#97c0c4
+palette = 15=#3b3b3e
+
+# font-family = "Geist Mono"
+# font-style = regular
+font-size = 16
+
+
+# Keybinds
+
+keybind = super+shift+r=reload_config
+
+# Terminal Split
+keybind = super+shift+h=new_split:left
+keybind = super+shift+l=new_split:right
+keybind = super+shift+j=new_split:down
+keybind = super+shift+k=new_split:up
+
+# Split Navigation
+keybind = super+h=goto_split:previous
+keybind = super+l=goto_split:next
+
+# Terminal Type
+# term = xterm-ghostty
+term = xterm-256color
+
+# MacOS Specific
+macos-auto-secure-input = true
+
+# Shader
+custom-shader = shaders/custom/starfield.glsl
