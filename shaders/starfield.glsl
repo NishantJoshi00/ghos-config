@@ -5,6 +5,7 @@ const float repeats = 30.;
 const float layers = 21.;
 // star colors
 const vec3 white = vec3(0.8); // Set star color to pure white
+const vec3 blue = vec3(0.5, 0.7, 1.0); // Bluish color for distant stars
 
 // # Helper Functions
 /**
@@ -122,8 +123,11 @@ vec3 stars(vec2 uv, float offset) {
     vec2 j = (rndXY - uv) * rndSize;
     float sparkle = 1. / dot(j, j);
 
-    // Set stars to be pure white
-    col += white * sparkle;
+    // Apply Doppler effect based on distance from center
+    float distance = length(uv - vec2(0.5));
+    vec3 starColor = mix(white, blue, distance * 2.0);
+
+    col += starColor * sparkle;
 
     col *= smoothstep(1., 0.8, trans);
     return col; // Return pure white stars only

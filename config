@@ -47,3 +47,4 @@ macos-auto-secure-input = true
 
 # Shader
 custom-shader = shaders/starfield.glsl
+# custom-shader = shaders/extern/crt.glsl
