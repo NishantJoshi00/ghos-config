@@ -19,8 +19,8 @@ palette = 13=#e8b0d4
 palette = 14=#97c0c4
 palette = 15=#3b3b3e
 
-# font-family = "Geist Mono"
-# font-style = regular
+font-family = "Geist Mono"
+font-style = regular
 font-size = 16
 
 
@@ -46,4 +46,4 @@ term = xterm-256color
 macos-auto-secure-input = true
 
 # Shader
-custom-shader = shaders/custom/starfield.glsl
+custom-shader = shaders/starfield.glsl
