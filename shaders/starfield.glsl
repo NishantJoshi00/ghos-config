@@ -7,7 +7,11 @@ const float layers = 21.;
 const vec3 white = vec3(0.8); // Set star color to pure white
 const vec3 blue = vec3(0.5, 0.7, 1.0); // Bluish color for distant stars
 
+const float TTL = 10.0;
+
 // # Helper Functions
+
+
 /**
  * Generate a 1D pseudo-random number based on the input 2D vector.
  * @param {vec2} p - Input 2D vector.
@@ -94,7 +98,7 @@ float perlin2(vec2 uv, int octaves, float pscale) {
  * @returns {vec3} - Star color.
  */
 vec3 stars(vec2 uv, float offset) {
-    float timeScale = -(iTime + offset) / layers;
+    float timeScale = -(pow(iTime, 2) + offset) / layers;
     float trans = fract(timeScale);
     float newRnd = floor(timeScale);
     vec3 col = vec3(0.);
@@ -131,17 +135,6 @@ vec3 stars(vec2 uv, float offset) {
 
     col *= smoothstep(1., 0.8, trans);
     return col; // Return pure white stars only
-}
-
-/**
- * Check if the current time is between the given start and end hours.
- * @param {float} startHour - Start hour (0-24).
- * @param {float} endHour - End hour (0-24).
- * @returns {bool} - True if the current time is between the given hours, false otherwise.
- */
-bool isTimeBetween(float startHour, float endHour) {
-    float currentTime = iTime / 3600.0; // Convert seconds to hours
-    return currentTime >= startHour && currentTime < endHour;
 }
 
 // # Rendering Functions
@@ -190,9 +183,10 @@ void disableShader(out vec4 fragColor, in vec2 fragCoord) {
  */
 void mainImage(out vec4 fragColor, in vec2 fragCoord)
 {
-    if (isTimeBetween(12.0, 18.0)) {
-        disableShader(fragColor, fragCoord);
+    if (iTime < TTL) {
+         renderStarField(fragColor, fragCoord);
     } else {
-        renderStarField(fragColor, fragCoord);
+         disableShader(fragColor, fragCoord);
     }
 }
+

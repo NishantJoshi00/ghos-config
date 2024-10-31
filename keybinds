@@ -1,0 +1,11 @@
+keybind = super+shift+r=reload_config
+
+# Terminal Split
+keybind = super+shift+h=new_split:left
+keybind = super+shift+l=new_split:right
+keybind = super+shift+j=new_split:down
+keybind = super+shift+k=new_split:up
+
+# Split Navigation
+keybind = super+h=goto_split:previous
+keybind = super+l=goto_split:next
