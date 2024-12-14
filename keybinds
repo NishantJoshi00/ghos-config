@@ -1,4 +1,4 @@
-keybind = super+shift+r=reload_config
+keybind = ctrl+shift+r=reload_config
 
 # Terminal Split
 keybind = super+shift+h=new_split:left

@@ -1,9 +1,9 @@
 # Theme
 config-file = themes/oldworld
 
-font-family = "Geist Mono"
+# font-family = "Geist Mono"
 font-style = regular
-font-size = 16
+font-size = 12
 
 
 # Keybinds
@@ -12,9 +12,10 @@ config-file = keybinds
 # Terminal Type
 # term = xterm-ghostty
 term = xterm-256color
+window-decoration = false
 
 # MacOS Specific
 macos-auto-secure-input = true
 
 # Shader
-custom-shader = shaders/starfield.glsl
+# custom-shader = shaders/starfield.glsl
