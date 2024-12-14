@@ -3,7 +3,7 @@ config-file = themes/oldworld
 
 # font-family = "Geist Mono"
 font-style = regular
-font-size = 12
+font-size = 16
 
 
 # Keybinds
@@ -12,7 +12,8 @@ config-file = keybinds
 # Terminal Type
 # term = xterm-ghostty
 term = xterm-256color
-window-decoration = false
+# window-decoration = false
+window-padding-x = 10
 
 # MacOS Specific
 macos-auto-secure-input = true
