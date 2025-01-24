@@ -1,5 +1,10 @@
 # Theme
-config-file = themes/oldworld
+config-file = themes/kanagawa
+
+macos-icon = custom-style
+macos-icon-frame = chrome
+macos-icon-ghost-color = 500073
+macos-icon-screen-color = 2A004E
 
 # font-family = "Geist Mono"
 font-style = regular
@@ -11,12 +16,9 @@ config-file = keybinds
 
 # Terminal Type
 # term = xterm-ghostty
-term = xterm-256color
+# term = xterm-256color
 # window-decoration = false
 window-padding-x = 10
 
 # MacOS Specific
 macos-auto-secure-input = true
-
-# Shader
-# custom-shader = shaders/starfield.glsl
