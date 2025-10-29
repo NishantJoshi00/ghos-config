@@ -55,6 +55,15 @@ keybind = super+k=clear_screen
 keybind = super+shift+p=toggle_command_palette
 
 # ===================
+# QUICK TERMINAL
+# ===================
+quick-terminal-position = top
+quick-terminal-size = 100%,50%
+quick-terminal-autohide = true
+quick-terminal-animation-duration = 0.2
+keybind = global:super+grave_accent=toggle_quick_terminal
+
+# ===================
 # PANE SPLITTING
 # ===================
 keybind = super+shift+j=new_split:down
