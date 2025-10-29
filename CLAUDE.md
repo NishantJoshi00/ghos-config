@@ -1,5 +1,6 @@
-- remember to look for configuration options by viewing this site. https://ghostty.org/docs/config/reference
+- remember to look for configuration options by viewing this site: https://ghostty.org/docs/config/reference
+
 - for figuring out keybinds, use the following links as references:
-- https://ghostty.org/docs/config/keybind
-- https://ghostty.org/docs/config/keybind/sequence
-- https://ghostty.org/docs/config/keybind/reference
+    - https://ghostty.org/docs/config/keybind
+    - https://ghostty.org/docs/config/keybind/sequence
+    - https://ghostty.org/docs/config/keybind/reference
