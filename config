@@ -18,3 +18,4 @@ config-file = keybinds.conf
 
 # Utilities and experimental settings
 config-file = utils.conf
+keybind = shift+enter=text:\x1b\r
